@@ -18,7 +18,6 @@ tmux kill-server # بستن تمام سشن ها
 ###  Working with `Windows`
 ```
 داخل tmux:
-
 Ctrl+b c → ساخت پنجره جدید
 
 Ctrl+b n → رفتن به پنجره بعدی
@@ -31,7 +30,7 @@ Ctrl+b & → بستن پنجره فعلی
 
 Ctrl+b w → نمایش لیست پنجره ها داخل یک سشن
 
-tmux list-windows -t mysession → بیرون از سشن
+tmux list-windows -t mysession → نمایش لیست پنجره ها بیرون یک سشن
 ```
 ### Working with `Panes`
 ```
@@ -42,6 +41,10 @@ Ctrl+b % → تقسیم عمودی
 Ctrl+b o → سوییچ بین پنل‌ها
 
 Ctrl+b x → بستن پنل فعلی
+
+Ctrl+b { → جابجا کردن پنل
+
+Ctrl+b q → نمایش شماره پنل ها
 
 Ctrl+b ← / → / ↑ / ↓ → رفتن به پنل دیگر با کلیدهای جهت
 ```
