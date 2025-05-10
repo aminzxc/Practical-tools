@@ -121,3 +121,12 @@ journalctl -u xray -f
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/MHSanaei/x-ui/master/install.sh)
 ```
+### Convert link to QRcode
+```
+apt install qrencode
+qrencode -t ansiutf8 'vless://fa8c53f7-5e5d-4e48-b60c-0de8f09c9e91@ip:1899?encryption=none&type=tcp#V2Ray-TCP'
+OR
+https://www.qr-code-generator.com/
+
+```
+
