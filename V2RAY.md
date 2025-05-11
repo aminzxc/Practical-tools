@@ -120,6 +120,9 @@ journalctl -u xray -f
 ### To control users, you can use the `x-ui` version. It performs all the configurations separately
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/MHSanaei/x-ui/master/install.sh)
+OR
+bash <(curl -Ls https://raw.githubusercontent.com/MHSanaei/3x-ui/refs/tags/v2.5.8/install.sh)
+https://github.com/MHSanaei/3x-ui
 ```
 ### Convert link to QRcode
 ```
