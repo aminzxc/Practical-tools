@@ -133,8 +133,9 @@ OR
 bash <(curl -Ls https://raw.githubusercontent.com/MHSanaei/3x-ui/refs/tags/v2.5.8/install.sh)
 https://github.com/MHSanaei/3x-ui
 ```
-![./images/1.png]
-![./images/2.png]
-![./images/3.png]
-![./images/4.png]
+![config](./images/1.png)
+![config](./images/2.png)
+![config](./images/3.png)
+![config](./images/4.png)
+
 
