@@ -117,13 +117,7 @@ vless://<UUID>@<IP>:<PORT>?encryption=none&type=tcp#<Name>
 systemctl status xray.service
 journalctl -u xray -f
 ```
-### To control users, you can use the `x-ui` version. It performs all the configurations separately
-```
-bash <(curl -Ls https://raw.githubusercontent.com/MHSanaei/x-ui/master/install.sh)
-OR
-bash <(curl -Ls https://raw.githubusercontent.com/MHSanaei/3x-ui/refs/tags/v2.5.8/install.sh)
-https://github.com/MHSanaei/3x-ui
-```
+
 ### Convert link to QRcode
 ```
 apt install qrencode
@@ -132,4 +126,15 @@ OR
 https://www.qr-code-generator.com/
 
 ```
+### To control users, you can use the `x-ui` version. It performs all the configurations separately
+```
+bash <(curl -Ls https://raw.githubusercontent.com/MHSanaei/x-ui/master/install.sh)
+OR
+bash <(curl -Ls https://raw.githubusercontent.com/MHSanaei/3x-ui/refs/tags/v2.5.8/install.sh)
+https://github.com/MHSanaei/3x-ui
+```
+![./images/1.png]
+![./images/2.png]
+![./images/3.png]
+![./images/4.png]
 
