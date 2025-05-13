@@ -137,5 +137,9 @@ https://github.com/MHSanaei/3x-ui
 ![config](./images/2.png)
 ![config](./images/3.png)
 ![config](./images/4.png)
+### Testing how the VPN is working properly
+```
+tcpdump -i eth0 port 443 -n
+```
 
 
