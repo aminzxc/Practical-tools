@@ -47,6 +47,10 @@ WantedBy=multi-user.target
 ```
 openssl rand -hex 16
 ```
+### manual execution `frps`
+```
+./frps -c ./frps.toml
+```
 ### Installation and setup on Windows client `frpc`
 ```
 [common]
@@ -71,7 +75,7 @@ open CMD
 nssm install frpc
 ```
 ![nssm](./images/nssm.png)
-### manual execution
+### manual execution `frpc`
 ```
 frpc.exe -c frpc.toml
 ```
