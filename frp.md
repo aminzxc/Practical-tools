@@ -65,11 +65,12 @@ remote_port = 3389
 ```
 download https://colab.research.google.com/drive/1PBr-lz89TBSyOMZXe3_x6ucb2_EdEyoU
 ```
+```
 cd C:\Users\amin\Documents\nssm\win64
 open CMD
 nssm install frpc
 ```
-![nssm](images/nssm.png)
+![nssm](./images/nssm.png)
 ### manual execution
 ```
 frpc.exe -c frpc.toml
