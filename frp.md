@@ -69,8 +69,8 @@ cd C:\Users\amin\Documents\nssm\win64
 open CMD
 nssm install frpc
 ```
-![nssm](./images/nssm.png)
-### Manual execution
+![nssm](images/nssm.png)
+### manual execution
 ```
 frpc.exe -c frpc.toml
 ```
