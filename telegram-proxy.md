@@ -8,3 +8,7 @@ ref: https://github.com/HirbodBehnam/MTProtoProxyInstaller
 bash <(curl -Ls --ipv4 https://github.com/Musixal/haproxy/raw/main/haproxy.sh)
 ref: https://github.com/Musixal/HAProxy
 ```
+### youtube
+```
+https://www.youtube.com/watch?v=Z5uHg4H1GS0
+```
