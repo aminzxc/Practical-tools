@@ -1,3 +1,8 @@
+### config DOH
+```
+https://github.com/Ptechgithub/smartSNI#
+youtube: https://www.youtube.com/watch?v=D6IM5Nk_Bng
+```
 ### config on server
 ```
 systemctl disable systemd-resolved --now
