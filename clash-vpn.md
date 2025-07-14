@@ -1,6 +1,11 @@
 ### install clash
 ```
-curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.32/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+https://github.com/MetaCubeX/mihomo/releases/download/v1.19.11/mihomo-linux-amd64-v1.19.11.gz
+```
+### enable tun
+```
+sudo modprobe tun
+ls /dev/net/tun
 ```
 ### extract file
 ```
@@ -8,7 +13,7 @@ gzip -d mihomo-linux-amd64-v1.19.11.gz
 mv mihomo-linux-amd64-v1.19.11 mihomo
 chmod +x mihomo
 ```
-### انتقال به مسیر اجرایی
+### Transfer to the executive path
 ```
 sudo mv mihomo /usr/local/bin/clash-meta
 ```
@@ -105,6 +110,22 @@ NoNewPrivileges=true
 
 [Install]
 WantedBy=multi-user.target
+
+or
+
+[Unit]
+Description=Clash.Meta Daemon
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/local/bin/clash-meta -d /root/.config/clash
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+
 ```
 ```
 sudo systemctl daemon-reexec
@@ -114,4 +135,9 @@ sudo systemctl start clash-meta
 ### log & status
 ```
 journalctl -u clash-meta -f
+```
+### convert config v2ray to clash
+```
+https://github.com/tindy2013/subconverter
+https://acl4ssr.netlify.app
 ```
