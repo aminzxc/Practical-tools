@@ -4,6 +4,7 @@ wget https://git.io/vpn -O openvpn-install.sh
 chmod +x openvpn-install.sh
 ./openvpn-install.sh
 ```
+### To manage users, we need to run the installation script again
 ### config open vpn
 ```
 # vim /etc/openvpn/server/server.conf
