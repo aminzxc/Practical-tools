@@ -151,6 +151,10 @@ curl -x socks5h://127.0.0.1:7891 https://ifconfig.me
 curl -A "Mozilla/5.0" -x socks5h://127.0.0.1:7890 https://api.ipify.org
 curl -A "Mozilla/5.0" https://api.ipify.org//api.ipify.org
 nslookup registry.k8s.io
+curl -I https://registry.k8s.io
+curl -I https://packages.cloud.google.com
+If it gets a 403, it's a ban.
+
 ```
 ### service clash
 ```
