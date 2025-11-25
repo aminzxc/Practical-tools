@@ -208,3 +208,12 @@ journalctl -u clash-meta -f
 https://github.com/tindy2013/subconverter
 https://acl4ssr.netlify.app
 ```
+### config for swarm & kubernetes
+```
+# config clash meta
+listen: 127.0.0.1:1053
+# /etc/resolv.conf
+nameserver 127.0.0.53
+systemctl status systemd-resolved
+
+```
