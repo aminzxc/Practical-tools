@@ -215,5 +215,29 @@ listen: 127.0.0.1:1053
 # /etc/resolv.conf
 nameserver 127.0.0.53
 systemctl status systemd-resolved
+```
+### config for proxy
+```
+# config clash
+tun:
+  enable: false
 
+# set proxy for docker
+vim /etc/systemd/system/docker.service.d/http-proxy.conf
+[Service]
+Environment="HTTP_PROXY=http://127.0.0.1:7890"
+Environment="HTTPS_PROXY=http://127.0.0.1:7890"
+Environment="NO_PROXY=localhost,127.0.0.1,::1,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,.cluster.local,.svc"
+
+# set proxy for apt
+vim /etc/apt/apt.conf.d/80proxy
+Acquire::http::Proxy "http://127.0.0.1:7890/";
+Acquire::https::Proxy "http://127.0.0.1:7890/";
+
+# set proxy for kubelet
+vim /etc/systemd/system/kubelet.service.d/http-proxy.conf
+[Service]
+Environment="HTTP_PROXY=http://127.0.0.1:7890"
+Environment="HTTPS_PROXY=http://127.0.0.1:7890"
+Environment="NO_PROXY=localhost,127.0.0.1,::1,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,.cluster.local,.svc"
 ```
