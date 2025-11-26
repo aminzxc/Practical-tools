@@ -45,3 +45,8 @@ google.com.             418     IN      A       216.239.38.120
 vim /etc/resolv.conf
 nameserver 3.88.158.132
 ```
+```
+ln -s /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+systemctl stop systemd-resolved
+vim /etc/systemd/resolved.conf
+```
