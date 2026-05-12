@@ -1,3 +1,4 @@
+```
 services:
   grist:
     image: gristlabs/grist:latest
@@ -20,3 +21,4 @@ networks:
     external: true
 volumes:
   data:
+```
