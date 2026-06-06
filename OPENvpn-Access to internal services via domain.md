@@ -107,3 +107,8 @@ docker run -it -p 10.8.0.1:8077:80 nginx
 ```
 http://grafana.vpn:8083
 ```
+### connect open vpn cli
+```
+apt install openvpn -y
+openvpn --config client1735.ovpn --route-nopull
+```
