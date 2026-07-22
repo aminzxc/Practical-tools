@@ -8,3 +8,16 @@ sshuttle -vvv -r user@ip:port  0.0.0.0/0 --exclude local-ip  --exclude server-ip
 ```
 ### The destination server user must have shell
 ### It is best used for use within tmux or screen
+### access docker to sshuttle
+```
+sshuttle -vvv \
+  --method nat \
+  --listen 0.0.0.0:12300 \
+  -r root@82.115.19.61:22 \
+  --exclude 82.115.19.61/32 \
+  --exclude 172.24.11.199/32 \
+  --exclude 172.18.0.0/16 \
+  --dns \
+  --disable-ipv6 \
+  0.0.0.0/0
+```
