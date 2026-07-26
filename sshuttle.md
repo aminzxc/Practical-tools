@@ -21,7 +21,7 @@ sshuttle -vvv \
   --disable-ipv6 \
   0.0.0.0/0
 ```
-### Telegram traffic only
+### Telegram traffic only.
 ```
 sshuttle -vvv \
  --method nat \
