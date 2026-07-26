@@ -21,3 +21,13 @@ sshuttle -vvv \
   --disable-ipv6 \
   0.0.0.0/0
 ```
+### Telegram traffic only
+```
+sshuttle -vvv \
+ --method nat \
+ --listen 0.0.0.0:12300 \
+ -r root@82.115.19.61:22 \
+ --exclude 82.115.19.61/32 \
+ --disable-ipv6 \
+ 149.154.166.110:443
+```
