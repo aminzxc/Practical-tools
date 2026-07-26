@@ -29,5 +29,8 @@ sshuttle -vvv \
  -r root@82.115.19.61:22 \
  --exclude 82.115.19.61/32 \
  --disable-ipv6 \
- 149.154.166.110:443
+ 149.154.166.110:443  # api.telegram.org
+```
+```
+getent ahostsv4 api.telegram.org
 ```
