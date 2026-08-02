@@ -112,3 +112,33 @@ http://grafana.vpn:8083
 apt install openvpn -y
 openvpn --config client1735.ovpn --route-nopull
 ```
+### Split Tunneling
+```
+# open config file
+comment  redirect-gateway def1
+# add config
+route-nopull
+pull-filter ignore "redirect-gateway"
+auth-nocache
+# GitLab
+route 172.24.11.223 255.255.255.255 vpn_gateway
+
+# Registry
+route 172.24.11.209 255.255.255.255 vpn_gateway
+or
+route 172.24.11.0 255.255.255.0 vpn_gateway
+```
+### create auth file
+```
+vim client1735.auth
+user
+pass
+```
+### run
+```
+chmod 600 client1735.auth
+
+sudo openvpn \
+  --config client1735.ovpn \
+  --auth-user-pass ./client1735.auth
+```
