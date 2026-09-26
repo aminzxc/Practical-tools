@@ -39,6 +39,18 @@ google.com.             418     IN      A       216.239.38.120
 ;; SERVER: 3.88.158.132#53(3.88.158.142) (UDP)
 ;; WHEN: Mon Jun 30 10:22:10 +0330 2025
 ;; MSG SIZE  rcvd: 44
+
+
+curl -I https://registry.k8s.io
+curl -I https://docker.io
+curl -I https://registry-1.docker.io
+curl -I https://auth.docker.io
+curl -I https://ghcr.io
+curl -I https://quay.io
+
+kubeadm config images list
+
+curl -v https://registry.k8s.io/v2/
 ```
 ### Set up on server
 ```
