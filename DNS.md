@@ -62,3 +62,14 @@ ln -s /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 systemctl stop systemd-resolved
 vim /etc/systemd/resolved.conf
 ```
+### open port 53 on server
+```
+sudo mkdir -p /etc/systemd/resolved.conf.d
+
+sudo tee /etc/systemd/resolved.conf.d/no-stub.conf >/dev/null <<'EOF'
+[Resolve]
+DNSStubListener=no
+EOF
+sudo ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
+sudo systemctl restart systemd-resolved
+```
